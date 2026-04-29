@@ -1,9 +1,4 @@
 <!doctype html>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>Devin Lord | GIS Technician</title>
@@ -48,7 +43,6 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <!--<li><a href="#elements">Elements</a></li>-->
           </ul>
         </nav>
       </header>
@@ -74,7 +68,7 @@
           <p>Based in Houston, TX — the heart of the energy industry.</p>
         </article>
 
-        <!-- Work -->
+        <!-- Skills -->
         <article id="skills">
           <h2 class="major">Skills</h2>
           <h3>GIS Software</h3>
@@ -99,39 +93,57 @@
           </p>
         </article>
 
-        <!-- About -->
+        <!-- Projects -->
         <article id="projects">
           <h2 class="major">Projects</h2>
+
+          <h3>Houston Power Outage Vulnerability Explorer</h3>
+          <p><strong>Tools:</strong> ArcGIS Pro · Weighted Overlay · Spatial Join · Near Analysis · GeoJSON · Leaflet.js · HTML/CSS · GitHub Pages</p>
+          <p>
+            An interactive web map exploring which Harris County communities are most vulnerable during major power outage events — modeled after real conditions exposed by Winter Storm Uri (2021). A composite vulnerability index was built for every Census tract by combining three weighted factors: CDC Social Vulnerability Index percentile (50%), FEMA flood zone exposure (30%), and distance to the nearest electrical substation (20%). The resulting score identifies neighborhoods where poverty, flood risk, and infrastructure gaps converge — producing a spatial pattern consistent with Houston's known history of uneven investment and environmental exposure.
+          </p>
+          <p>
+            The live map allows users to hover over any tract to see its full score breakdown, toggle flood zone and substation layers on and off, and search any Houston address to see local vulnerability conditions.
+          </p>
+          <ul class="actions">
+            <li><a href="https://devinlord.github.io/houston-vulnerability/" target="_blank" class="button primary">View Live Map</a></li>
+          </ul>
+          <ul>
+            <li>Weighted overlay vulnerability index across 1,100+ Census tracts</li>
+            <li>Data sourced from CDC, FEMA NFHL, and HIFLD — fully reproducible</li>
+            <li>Interactive hover, layer toggles, and address search</li>
+            <li>Deployed as a public web app via GitHub Pages</li>
+          </ul>
+
+          <hr />
+
           <h3>Lincoln County Wildfire Risk Assessment</h3>
-  <p><strong>Tools:</strong> ArcGIS Pro · Spatial Analyst · Weighted Overlay · Python (ArcPy)</p>
-  <p>
-    Produced a composite wildfire risk surface for Lincoln County, New Mexico (home of Smokey Bear!)
-    integrating five spatial risk factors: vegetation fuel load (NLCD 2021), 
-    terrain slope, aspect, historical fire perimeters (NIFC), and road proximity. 
-    Reclassified each factor to a 1–5 risk scale and combined using weighted overlay 
-    analysis (35/25/15/15/10 weighting). A structure-level risk assessment was 
-    performed for the Ruidoso urban area using Zonal Statistics, identifying 
-    structures within high and very high risk zones.
-  </p>
-  <p>
-    All data sourced from public repositories including MRLC, USGS National Map, 
-    NIFC, and U.S. Census TIGER/Line. Coordinate system: NAD 1983 UTM Zone 13N. 
-    Cell size: 30 meters.
-  </p>
+          <p><strong>Tools:</strong> ArcGIS Pro · Spatial Analyst · Weighted Overlay · Python (ArcPy)</p>
+          <p>
+            Produced a composite wildfire risk surface for Lincoln County, New Mexico (home of Smokey Bear!)
+            integrating five spatial risk factors: vegetation fuel load (NLCD 2021), 
+            terrain slope, aspect, historical fire perimeters (NIFC), and road proximity. 
+            Reclassified each factor to a 1–5 risk scale and combined using weighted overlay 
+            analysis (35/25/15/15/10 weighting). A structure-level risk assessment was 
+            performed for the Ruidoso urban area using Zonal Statistics, identifying 
+            structures within high and very high risk zones.
+          </p>
+          <p>
+            All data sourced from public repositories including MRLC, USGS National Map, 
+            NIFC, and U.S. Census TIGER/Line. Coordinate system: NAD 1983 UTM Zone 13N. 
+            Cell size: 30 meters.
+          </p>
+          <span class="image main">
+            <img src="images/LordD_LincolnCounty_WildfireRisk_2026.png" alt="Lincoln County Wildfire Risk Map" />
+          </span>
+          <ul>
+            <li>5-factor weighted overlay risk model</li>
+            <li>Structure-level risk assessment for Ruidoso</li>
+            <li>100% public data — fully reproducible methodology</li>
+            <li>30m resolution county-wide risk surface</li>
+          </ul>
 
-  
-  <span class="image main">
-  <img src="images/LordD_LincolnCounty_WildfireRisk_2026.png" alt="Lincoln County Wildfire Risk Map" />
-</span>
-
-  <ul>
-    <li>5-factor weighted overlay risk model</li>
-    <li>Structure-level risk assessment for Ruidoso</li>
-    <li>100% public data — fully reproducible methodology</li>
-    <li>30m resolution county-wide risk surface</li>
-  </ul>
-
-</article>
+        </article>
 
         <!-- Contact -->
         <article id="contact">
@@ -144,7 +156,7 @@
               <a href="mailto:devinlordhtx@gmail.com">devinlordhtx@gmail.com</a>
             </li>
             <li>
-              <a
+              
                 href="https://www.linkedin.com/in/devin-lord-852286257"
                 target="_blank"
                 >LinkedIn Profile</a
